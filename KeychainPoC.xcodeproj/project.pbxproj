@@ -533,7 +533,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mikhaildudarev/Keychain";
 			requirement = {
-				branch = develop;
+				branch = master;
 				kind = branch;
 			};
 		};

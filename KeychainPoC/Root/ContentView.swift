@@ -37,8 +37,6 @@ struct ContentView: View {
                     Label("Cards", systemImage: "square")
                 }
         }
-        .task {
-            launchScreenStateManager.dismiss()
-        }
+        .task { launchScreenStateManager.dismiss() }
     }
 }

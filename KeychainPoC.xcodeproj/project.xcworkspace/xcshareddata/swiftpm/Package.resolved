@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mikhaildudarev/Keychain",
       "state" : {
-        "branch" : "develop",
-        "revision" : "ef0b22a3fa8703a50af72af82d172db61cdc876d"
+        "branch" : "master",
+        "revision" : "3253e38f6e41bf0756a5d78760b8b26fab689129"
       }
     },
     {
