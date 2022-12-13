@@ -1,5 +1,5 @@
 //
-//  CreatePasswordView.swift
+//  CreateUserDetailsView.swift
 //  KeychainPoC
 //
 //  Created by Mikhail Dudarev on 13.12.2022.
@@ -7,32 +7,42 @@
 
 import SwiftUI
 
-struct CreatePasswordView: View {
+struct CreateUserDetailsView: View {
     // MARK: - Properties
-    @ObservedObject private var viewModel: CreatePasswordViewModel
+    @ObservedObject private var viewModel: CreateUserDetailsViewModel
     @Environment(\.dismiss) private var dismiss
     
     // MARK: - Init/Deinit
-    init(viewModel: CreatePasswordViewModel) {
+    init(viewModel: CreateUserDetailsViewModel) {
         self.viewModel = viewModel
     }
     
     // MARK: - Layout
     var body: some View {
         VStack(spacing: 10) {
-            TextField("Host", text: $viewModel.host, prompt: nil)
+            TextField("Name", text: $viewModel.name, prompt: nil)
                 .textFieldStyle(.roundedBorder)
-                .keyboardType(.URL)
+                .keyboardType(.default)
                 .autocorrectionDisabled(true)
-                .textInputAutocapitalization(.never)
-            TextField("Login", text: $viewModel.login, prompt: nil)
+                .textInputAutocapitalization(.words)
+            TextField("Surname", text: $viewModel.surname, prompt: nil)
+                .textFieldStyle(.roundedBorder)
+                .keyboardType(.default)
+                .autocorrectionDisabled(true)
+                .textInputAutocapitalization(.words)
+            TextField("Patronymic", text: $viewModel.patronymic, prompt: nil)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.asciiCapable)
                 .autocorrectionDisabled(true)
-                .textInputAutocapitalization(.never)
-            TextField("Password", text: $viewModel.password, prompt: nil)
+                .textInputAutocapitalization(.words)
+            TextField("Email", text: $viewModel.email, prompt: nil)
                 .textFieldStyle(.roundedBorder)
-                .keyboardType(.asciiCapable)
+                .keyboardType(.emailAddress)
+                .autocorrectionDisabled(true)
+                .textInputAutocapitalization(.never)
+            TextField("Phone", text: $viewModel.phone, prompt: nil)
+                .textFieldStyle(.roundedBorder)
+                .keyboardType(.phonePad)
                 .autocorrectionDisabled(true)
                 .textInputAutocapitalization(.never)
         }

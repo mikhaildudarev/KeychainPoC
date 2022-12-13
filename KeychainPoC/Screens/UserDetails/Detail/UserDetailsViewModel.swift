@@ -1,5 +1,5 @@
 //
-//  PasswordViewModel.swift
+//  UserDetailsViewModel.swift
 //  KeychainPoC
 //
 //  Created by Mikhail Dudarev on 13.12.2022.
@@ -8,13 +8,13 @@
 import Foundation
 import Keychain
 
-final class PasswordViewModel: ObservableObject {
+final class UserDetailsViewModel: ObservableObject {
     // MARK: - Properties
-    @Published var model: Password
+    @Published var model: User
     private let keychain: KeychainLogic = Keychain.shared
     
     // MARK: - Init/Deinit
-    init(model: Password) {
+    init(model: User) {
         self.model = model
     }
     

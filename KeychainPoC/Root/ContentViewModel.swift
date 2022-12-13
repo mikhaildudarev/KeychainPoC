@@ -10,4 +10,5 @@ import Foundation
 final class ContentViewModel: ObservableObject {
     // MARK: - Properties
     let passwordsListViewModel = PasswordsListViewModel()
+    let userDetailsListViewModel = UserDetailsListViewModel()
 }

@@ -22,6 +22,13 @@
 		FA711FF72948FA6000A45998 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FF62948FA6000A45998 /* CreatePasswordView.swift */; };
 		FA711FF92948FA7700A45998 /* CreatePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FF82948FA7700A45998 /* CreatePasswordViewModel.swift */; };
 		FA711FFA294900CE00A45998 /* Keychain in Embed Frameworks */ = {isa = PBXBuildFile; productRef = FA711FDE2948F59E00A45998 /* Keychain */; };
+		FA711FFE29490AF300A45998 /* UserDetailsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FFD29490AF300A45998 /* UserDetailsListView.swift */; };
+		FA71200129490B0900A45998 /* UserDetailsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71200029490B0900A45998 /* UserDetailsListViewModel.swift */; };
+		FA71200329490C6500A45998 /* UserDetailsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71200229490C6500A45998 /* UserDetailsCellView.swift */; };
+		FA71200629490D5900A45998 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71200529490D5900A45998 /* UserDetailsView.swift */; };
+		FA71200829490D6100A45998 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71200729490D6100A45998 /* UserDetailsViewModel.swift */; };
+		FA71200B29490ECC00A45998 /* CreateUserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71200A29490ECC00A45998 /* CreateUserDetailsView.swift */; };
+		FA71200D29490ED600A45998 /* CreateUserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71200C29490ED600A45998 /* CreateUserDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +60,13 @@
 		FA711FF32948F91B00A45998 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
 		FA711FF62948FA6000A45998 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		FA711FF82948FA7700A45998 /* CreatePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewModel.swift; sourceTree = "<group>"; };
+		FA711FFD29490AF300A45998 /* UserDetailsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsListView.swift; sourceTree = "<group>"; };
+		FA71200029490B0900A45998 /* UserDetailsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsListViewModel.swift; sourceTree = "<group>"; };
+		FA71200229490C6500A45998 /* UserDetailsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsCellView.swift; sourceTree = "<group>"; };
+		FA71200529490D5900A45998 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		FA71200729490D6100A45998 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		FA71200A29490ECC00A45998 /* CreateUserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserDetailsView.swift; sourceTree = "<group>"; };
+		FA71200C29490ED600A45998 /* CreateUserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				FA711FE82948F71E00A45998 /* Password */,
+				FA711FFC29490AD400A45998 /* UserDetails */,
 				FA711FE42948F68A00A45998 /* Screen.swift */,
 			);
 			path = Screens;
@@ -155,6 +170,44 @@
 			children = (
 				FA711FF62948FA6000A45998 /* CreatePasswordView.swift */,
 				FA711FF82948FA7700A45998 /* CreatePasswordViewModel.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		FA711FFC29490AD400A45998 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FA71200929490EBE00A45998 /* Create */,
+				FA71200429490D4B00A45998 /* Detail */,
+				FA711FFF29490AF800A45998 /* List */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		FA711FFF29490AF800A45998 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FA711FFD29490AF300A45998 /* UserDetailsListView.swift */,
+				FA71200029490B0900A45998 /* UserDetailsListViewModel.swift */,
+				FA71200229490C6500A45998 /* UserDetailsCellView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		FA71200429490D4B00A45998 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FA71200529490D5900A45998 /* UserDetailsView.swift */,
+				FA71200729490D6100A45998 /* UserDetailsViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FA71200929490EBE00A45998 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				FA71200A29490ECC00A45998 /* CreateUserDetailsView.swift */,
+				FA71200C29490ED600A45998 /* CreateUserDetailsViewModel.swift */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -238,15 +291,22 @@
 			files = (
 				FA711FE72948F6B400A45998 /* ContentViewModel.swift in Sources */,
 				FA711FF42948F91B00A45998 /* PasswordViewModel.swift in Sources */,
+				FA71200329490C6500A45998 /* UserDetailsCellView.swift in Sources */,
 				FA711FD22948F54F00A45998 /* ContentView.swift in Sources */,
+				FA71200D29490ED600A45998 /* CreateUserDetailsViewModel.swift in Sources */,
 				FA711FEA2948F73E00A45998 /* PasswordsListView.swift in Sources */,
+				FA711FFE29490AF300A45998 /* UserDetailsListView.swift in Sources */,
+				FA71200829490D6100A45998 /* UserDetailsViewModel.swift in Sources */,
 				FA711FF22948F90300A45998 /* PasswordView.swift in Sources */,
+				FA71200129490B0900A45998 /* UserDetailsListViewModel.swift in Sources */,
 				FA711FEF2948F8A400A45998 /* PasswordsListCellView.swift in Sources */,
 				FA711FF92948FA7700A45998 /* CreatePasswordViewModel.swift in Sources */,
+				FA71200629490D5900A45998 /* UserDetailsView.swift in Sources */,
 				FA711FD02948F54F00A45998 /* KeychainPoCApp.swift in Sources */,
 				FA711FF72948FA6000A45998 /* CreatePasswordView.swift in Sources */,
 				FA711FE52948F68A00A45998 /* Screen.swift in Sources */,
 				FA711FED2948F75100A45998 /* PasswordsListViewModel.swift in Sources */,
+				FA71200B29490ECC00A45998 /* CreateUserDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

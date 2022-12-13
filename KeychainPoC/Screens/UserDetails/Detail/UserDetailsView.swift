@@ -1,5 +1,5 @@
 //
-//  PasswordView.swift
+//  UserDetailsView.swift
 //  KeychainPoC
 //
 //  Created by Mikhail Dudarev on 13.12.2022.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct PasswordView: View {
+struct UserDetailsView: View {
     // MARK: - Properties
-    @ObservedObject var viewModel: PasswordViewModel
+    @ObservedObject var viewModel: UserDetailsViewModel
     @Environment(\.dismiss) private var dismiss
     
     // MARK: - Layout
@@ -18,16 +18,24 @@ struct PasswordView: View {
             HStack {
                 Grid(alignment: .leading) {
                     GridRow(alignment: .firstTextBaseline) {
-                        Text("Host")
-                        Text(viewModel.model.host)
+                        Text("Name").bold()
+                        Text(viewModel.model.name ?? "-")
                     }
                     GridRow(alignment: .firstTextBaseline) {
-                        Text("Login")
-                        Text(viewModel.model.login ?? "-")
+                        Text("Surname").bold()
+                        Text(viewModel.model.surname ?? "-")
                     }
                     GridRow(alignment: .firstTextBaseline) {
-                        Text("Password")
-                        Text(viewModel.model.value)
+                        Text("Patronymic").bold()
+                        Text(viewModel.model.patronymic ?? "-")
+                    }
+                    GridRow(alignment: .firstTextBaseline) {
+                        Text("Email").bold()
+                        Text(viewModel.model.email ?? "-")
+                    }
+                    GridRow(alignment: .firstTextBaseline) {
+                        Text("Phone").bold()
+                        Text(viewModel.model.phone ?? "-")
                     }
                 }
                 Spacer()

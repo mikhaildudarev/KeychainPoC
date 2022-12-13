@@ -14,9 +14,7 @@ final class CreatePasswordViewModel: ObservableObject {
     @Published var host: String = "https://ya.ru"
     @Published var login: String = ""
     @Published var password: String = ""
-    @Published var didChange: Bool = false
     @Published var canSave: Bool = false
-    @Published var shouldDismiss = false
     
     private let keychain: KeychainLogic
     private var cancellables: Set<AnyCancellable> = []

@@ -20,7 +20,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Passwords", systemImage: "triangle")
                 }
-            Text("Hello, world!")
+            UserDetailsListView(viewModel: viewModel.userDetailsListViewModel)
                 .tag(Screen.userDetails)
                 .tabItem {
                     Label("User Details", systemImage: "circle")

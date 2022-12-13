@@ -12,12 +12,7 @@ import SwiftUI
 final class PasswordsListViewModel: ObservableObject {
     // MARK: - Properties
     @Published var passwords: [Password] = []
-    private let keychain: KeychainLogic
-    
-    // MARK: - Init/Deinit
-    init() {
-        keychain = Keychain.shared
-    }
+    private let keychain: KeychainLogic = Keychain.shared
     
     // MARK: - Internal Methods
     func updatePasswords() {
@@ -32,7 +27,7 @@ final class PasswordsListViewModel: ObservableObject {
         switch result {
         case .success:
             updatePasswords()
-        case .failure(let error):
+        case .failure:
             return // todo: show alert
         }
     }
