@@ -11,6 +11,7 @@
 		FA711FD22948F54F00A45998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FD12948F54F00A45998 /* ContentView.swift */; };
 		FA711FD42948F55000A45998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA711FD32948F55000A45998 /* Assets.xcassets */; };
 		FA711FD72948F55000A45998 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA711FD62948F55000A45998 /* Preview Assets.xcassets */; };
+		FA711FDF2948F59E00A45998 /* Keychain in Frameworks */ = {isa = PBXBuildFile; productRef = FA711FDE2948F59E00A45998 /* Keychain */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA711FDF2948F59E00A45998 /* Keychain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +53,7 @@
 		FA711FCE2948F54F00A45998 /* KeychainPoC */ = {
 			isa = PBXGroup;
 			children = (
-				FA711FCF2948F54F00A45998 /* KeychainPoCApp.swift */,
-				FA711FD12948F54F00A45998 /* ContentView.swift */,
+				FA711FE02948F5B900A45998 /* Root */,
 				FA711FD32948F55000A45998 /* Assets.xcassets */,
 				FA711FD52948F55000A45998 /* Preview Content */,
 			);
@@ -65,6 +66,15 @@
 				FA711FD62948F55000A45998 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA711FE02948F5B900A45998 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FA711FCF2948F54F00A45998 /* KeychainPoCApp.swift */,
+				FA711FD12948F54F00A45998 /* ContentView.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = KeychainPoC;
+			packageProductDependencies = (
+				FA711FDE2948F59E00A45998 /* Keychain */,
+			);
 			productName = KeychainPoC;
 			productReference = FA711FCC2948F54F00A45998 /* KeychainPoC.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = FA711FC32948F54F00A45998;
+			packageReferences = (
+				FA711FDD2948F59E00A45998 /* XCRemoteSwiftPackageReference "Keychain" */,
+			);
 			productRefGroup = FA711FCD2948F54F00A45998 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA711FDD2948F59E00A45998 /* XCRemoteSwiftPackageReference "Keychain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mikhaildudarev/Keychain";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA711FDE2948F59E00A45998 /* Keychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA711FDD2948F59E00A45998 /* XCRemoteSwiftPackageReference "Keychain" */;
+			productName = Keychain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA711FC42948F54F00A45998 /* Project object */;
 }

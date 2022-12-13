@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "keychain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mikhaildudarev/Keychain",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "f5d0604f5af29bb33b7a743fde151a7bb9c5eee1"
+      }
+    },
+    {
+      "identity" : "samkeychain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mikhaildudarev/SAMKeychain",
+      "state" : {
+        "branch" : "master",
+        "revision" : "09778d0d227395f82735d95a13c28778d3374286"
+      }
+    }
+  ],
+  "version" : 2
+}
