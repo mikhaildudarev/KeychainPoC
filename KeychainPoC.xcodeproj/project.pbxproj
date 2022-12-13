@@ -12,7 +12,31 @@
 		FA711FD42948F55000A45998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA711FD32948F55000A45998 /* Assets.xcassets */; };
 		FA711FD72948F55000A45998 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA711FD62948F55000A45998 /* Preview Assets.xcassets */; };
 		FA711FDF2948F59E00A45998 /* Keychain in Frameworks */ = {isa = PBXBuildFile; productRef = FA711FDE2948F59E00A45998 /* Keychain */; };
+		FA711FE52948F68A00A45998 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FE42948F68A00A45998 /* Screen.swift */; };
+		FA711FE72948F6B400A45998 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FE62948F6B400A45998 /* ContentViewModel.swift */; };
+		FA711FEA2948F73E00A45998 /* PasswordsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FE92948F73E00A45998 /* PasswordsListView.swift */; };
+		FA711FED2948F75100A45998 /* PasswordsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FEC2948F75100A45998 /* PasswordsListViewModel.swift */; };
+		FA711FEF2948F8A400A45998 /* PasswordsListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FEE2948F8A400A45998 /* PasswordsListCellView.swift */; };
+		FA711FF22948F90300A45998 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FF12948F90300A45998 /* PasswordView.swift */; };
+		FA711FF42948F91B00A45998 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FF32948F91B00A45998 /* PasswordViewModel.swift */; };
+		FA711FF72948FA6000A45998 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FF62948FA6000A45998 /* CreatePasswordView.swift */; };
+		FA711FF92948FA7700A45998 /* CreatePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA711FF82948FA7700A45998 /* CreatePasswordViewModel.swift */; };
+		FA711FFA294900CE00A45998 /* Keychain in Embed Frameworks */ = {isa = PBXBuildFile; productRef = FA711FDE2948F59E00A45998 /* Keychain */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA711FFB294900CE00A45998 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA711FFA294900CE00A45998 /* Keychain in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA711FCC2948F54F00A45998 /* KeychainPoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainPoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +44,15 @@
 		FA711FD12948F54F00A45998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA711FD32948F55000A45998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA711FD62948F55000A45998 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA711FE42948F68A00A45998 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		FA711FE62948F6B400A45998 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		FA711FE92948F73E00A45998 /* PasswordsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsListView.swift; sourceTree = "<group>"; };
+		FA711FEC2948F75100A45998 /* PasswordsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsListViewModel.swift; sourceTree = "<group>"; };
+		FA711FEE2948F8A400A45998 /* PasswordsListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsListCellView.swift; sourceTree = "<group>"; };
+		FA711FF12948F90300A45998 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		FA711FF32948F91B00A45998 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		FA711FF62948FA6000A45998 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
+		FA711FF82948FA7700A45998 /* CreatePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FA711FE02948F5B900A45998 /* Root */,
+				FA711FE32948F67600A45998 /* Screens */,
 				FA711FD32948F55000A45998 /* Assets.xcassets */,
 				FA711FD52948F55000A45998 /* Preview Content */,
 			);
@@ -73,8 +107,56 @@
 			children = (
 				FA711FCF2948F54F00A45998 /* KeychainPoCApp.swift */,
 				FA711FD12948F54F00A45998 /* ContentView.swift */,
+				FA711FE62948F6B400A45998 /* ContentViewModel.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		FA711FE32948F67600A45998 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA711FE82948F71E00A45998 /* Password */,
+				FA711FE42948F68A00A45998 /* Screen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA711FE82948F71E00A45998 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				FA711FF52948FA5300A45998 /* Create */,
+				FA711FF02948F8F000A45998 /* Detail */,
+				FA711FEB2948F74600A45998 /* List */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		FA711FEB2948F74600A45998 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FA711FE92948F73E00A45998 /* PasswordsListView.swift */,
+				FA711FEC2948F75100A45998 /* PasswordsListViewModel.swift */,
+				FA711FEE2948F8A400A45998 /* PasswordsListCellView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		FA711FF02948F8F000A45998 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FA711FF12948F90300A45998 /* PasswordView.swift */,
+				FA711FF32948F91B00A45998 /* PasswordViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FA711FF52948FA5300A45998 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				FA711FF62948FA6000A45998 /* CreatePasswordView.swift */,
+				FA711FF82948FA7700A45998 /* CreatePasswordViewModel.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +169,7 @@
 				FA711FC82948F54F00A45998 /* Sources */,
 				FA711FC92948F54F00A45998 /* Frameworks */,
 				FA711FCA2948F54F00A45998 /* Resources */,
+				FA711FFB294900CE00A45998 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,8 +236,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA711FE72948F6B400A45998 /* ContentViewModel.swift in Sources */,
+				FA711FF42948F91B00A45998 /* PasswordViewModel.swift in Sources */,
 				FA711FD22948F54F00A45998 /* ContentView.swift in Sources */,
+				FA711FEA2948F73E00A45998 /* PasswordsListView.swift in Sources */,
+				FA711FF22948F90300A45998 /* PasswordView.swift in Sources */,
+				FA711FEF2948F8A400A45998 /* PasswordsListCellView.swift in Sources */,
+				FA711FF92948FA7700A45998 /* CreatePasswordViewModel.swift in Sources */,
 				FA711FD02948F54F00A45998 /* KeychainPoCApp.swift in Sources */,
+				FA711FF72948FA6000A45998 /* CreatePasswordView.swift in Sources */,
+				FA711FE52948F68A00A45998 /* Screen.swift in Sources */,
+				FA711FED2948F75100A45998 /* PasswordsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
       "location" : "https://github.com/mikhaildudarev/Keychain",
       "state" : {
         "branch" : "develop",
-        "revision" : "f5d0604f5af29bb33b7a743fde151a7bb9c5eee1"
+        "revision" : "ef0b22a3fa8703a50af72af82d172db61cdc876d"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/mikhaildudarev/SAMKeychain",
       "state" : {
         "branch" : "master",
-        "revision" : "09778d0d227395f82735d95a13c28778d3374286"
+        "revision" : "c917f4009b84888ae7ed24af1496772fa6a719a1"
       }
     }
   ],

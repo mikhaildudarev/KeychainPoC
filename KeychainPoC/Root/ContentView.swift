@@ -8,19 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - Properties
+    @State var selection: Screen = .password
+    @ObservedObject var viewModel: ContentViewModel
+    
+    // MARK: - Layout
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+        TabView(selection: $selection) {
+            PasswordsListView(viewModel: viewModel.passwordsListViewModel)
+                .tag(Screen.password)
+                .tabItem {
+                    Label("Passwords", systemImage: "triangle")
+                }
             Text("Hello, world!")
+                .tag(Screen.userDetails)
+                .tabItem {
+                    Label("User Details", systemImage: "circle")
+                }
+            Text("Hello, world!")
+                .tag(Screen.address)
+                .tabItem {
+                    Label("Addresses", systemImage: "cross")
+                }
+            Text("Hello, world!")
+                .tag(Screen.card)
+                .tabItem {
+                    Label("Cards", systemImage: "square")
+                }
         }
-        .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

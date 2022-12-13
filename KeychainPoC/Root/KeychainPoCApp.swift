@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct KeychainPoCApp: App {
+    // MARK: - Layout
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: ContentViewModel())
         }
     }
 }
