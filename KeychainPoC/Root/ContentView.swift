@@ -11,6 +11,7 @@ struct ContentView: View {
     // MARK: - Properties
     @State var selection: Screen = .password
     @ObservedObject var viewModel: ContentViewModel
+    @EnvironmentObject private var launchScreenStateManager: LaunchScreenStateManager
     
     // MARK: - Layout
     var body: some View {
@@ -35,6 +36,9 @@ struct ContentView: View {
                 .tabItem {
                     Label("Cards", systemImage: "square")
                 }
+        }
+        .task {
+            launchScreenStateManager.dismiss()
         }
     }
 }

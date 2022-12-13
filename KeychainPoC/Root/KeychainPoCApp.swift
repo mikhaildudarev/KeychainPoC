@@ -9,10 +9,19 @@ import SwiftUI
 
 @main
 struct KeychainPoCApp: App {
+    // MARK: - Properties
+    @StateObject var launchScreenStateManager = LaunchScreenStateManager()
+    
     // MARK: - Layout
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: ContentViewModel())
+            ZStack {
+                ContentView(viewModel: ContentViewModel())
+                if launchScreenStateManager.state != .finished {
+                    LaunchScreenView()
+                }
+            }
+            .environmentObject(launchScreenStateManager)
         }
     }
 }
